@@ -1,0 +1,22 @@
+{
+  "scope": "business logic: src/domain.cpp and src/services.cpp",
+  "covered_lines": 513,
+  "executable_lines": 534,
+  "line_percent": 96.07,
+  "threshold": 70,
+  "passed": true,
+  "files": [
+    {
+      "file": "domain.cpp",
+      "covered_lines": 69,
+      "executable_lines": 69,
+      "line_percent": 100.0
+    },
+    {
+      "file": "services.cpp",
+      "covered_lines": 444,
+      "executable_lines": 465,
+      "line_percent": 95.48
+    }
+  ]
+}

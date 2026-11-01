@@ -1,0 +1,19 @@
+name: Build and verify LMS
+on: [push, pull_request]
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo apt-get update && sudo apt-get install -y libsodium-dev ninja-build cppcheck
+      - run: cmake -S . -B build -G Ninja -DLMS_COVERAGE=ON -DCMAKE_BUILD_TYPE=Debug
+      - run: cmake --build build --parallel 2
+      - run: ctest --test-dir build --output-on-failure
+      - run: python3 tests/system_test.py --build build --output evidence/ci-system.json
+      - run: cppcheck --enable=warning,performance,portability --error-exitcode=1 --std=c++17 -Iinclude src 2> evidence/ci-static-analysis.txt
+      - run: python3 tests/coverage.py --build build --output evidence/ci-coverage.json
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: verification-evidence
+          path: evidence/

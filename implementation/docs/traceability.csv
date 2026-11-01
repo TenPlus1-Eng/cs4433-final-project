@@ -1,0 +1,31 @@
+Requirement,Use_cases,Design,Tables,Source,Tests
+FR01,UC01,AuthService;UserFactory,app_user,src/services.cpp;src/domain.cpp,T10;S01
+FR02,All,User::isPermitted;Service scope,app_user;course_lecturer;enrolment,src/domain.cpp;src/services.cpp,T03;T08;S04;S06
+FR03,UC01,AuthService;SessionManager,app_user,src/services.cpp,T10;S14
+FR04,UC02,AdminService;UserFactory,app_user,src/services.cpp,T11
+FR05,UC01;UC02,AuthService;AdminService,app_user,src/services.cpp,T10;T11
+FR06,UC03,AdminService,department,src/services.cpp,T08;T11
+FR07,UC04,AdminService,course,src/services.cpp,T11;S01
+FR08,UC05,AdminService,course_lecturer,src/services.cpp,T08;T11
+FR09,UC06,AdminService,enrolment,src/services.cpp,T08;T11
+FR10,UC07,AssignmentService,assignment,src/services.cpp,T04;T08;S01
+FR11,UC08,ExtensionService,extension,src/services.cpp,T06;T08
+FR12,UC09,SubmissionService,submission;extension;submission_file,src/services.cpp,T08;T13
+FR13,UC10,MarkingService;SubmissionLifecycle,submission;mark_audit,src/services.cpp;src/domain.cpp,T04;T07;S05
+FR14,UC12,AssignmentService,assignment;enrolment,src/services.cpp,T06;T11;S11
+FR15,UC13,SubmissionService;IFileStore,submission;submission_file,src/services.cpp;src/repository.cpp,T04;T05;T14;S02
+FR16,UC14,SubmissionService,submission;submission_file,src/services.cpp,T04;T05;T08
+FR17,UC15,SubmissionService::resultsForStudent,submission,src/services.cpp,T04;S05;S08
+FR18,UC21,IPenaltyPolicy;TieredDailyPenaltyPolicy,submission,src/domain.cpp;src/services.cpp,T01;T05;T06
+FR19,All,SubmissionLifecycle,submission constraints,src/domain.cpp;src/services.cpp,T02;T04;T07
+FR20,UC16,ModerationService::listMarked,department;course;submission,src/services.cpp,T08;T13;S06
+FR21,UC17;UC18,ModerationService,submission;mark_audit,src/services.cpp,T07;S07;S09
+FR22,UC17,ModerationService::release,submission,src/services.cpp,T04;T07;T13;S07
+FR23,UC22,Service::audit;SqliteDatabase::transaction,mark_audit,src/services.cpp;src/repository.cpp,T04;T07;T09;S09;S12
+FR24,UC11,SubmissionService::listForLecturer,submission,src/services.cpp,T13
+FR25,UC19,ModerationService::returnForRemark,submission,src/services.cpp,T07
+FR26,UC16,ModerationService::auditFor,mark_audit,src/services.cpp,T07;S09
+FR27,UC15,SubmissionService::resultsForStudent,submission,src/services.cpp,T04;S08
+FR28,UC15,Deferred Could requirement,app_user.last_login_at,Not implemented,Not tested
+FR11a,UC08a,ExtensionService::grantClassExtension,class_extension,src/services.cpp;src/repository.cpp,T15;T16;S21
+FR14a,UC12,AssignmentService;Service::deadline,class_extension;extension;assignment,src/services.cpp,T15;S21

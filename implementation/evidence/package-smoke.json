@@ -1,0 +1,12 @@
+[
+  {
+    "version": "v1.0",
+    "bootstrap_without_build_tool_PATH": true,
+    "console_starts_without_build_tool_PATH": true
+  },
+  {
+    "version": "v1.1",
+    "bootstrap_without_build_tool_PATH": true,
+    "console_starts_without_build_tool_PATH": true
+  }
+]

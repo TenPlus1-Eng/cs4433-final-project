@@ -1,0 +1,6 @@
+ID,Severity,Cause,Fix,Retest
+D01,High,Single JSON value treated as scalar instead of bound-value array,Normalise scalar repository parameters to a single-element array,T04-T13 passed after fix
+D02,High,Binary download cannot safely be represented as UTF-8 JSON string,Hex-encode binary replies and decode in console client,S03 binary round-trip check
+D03,Medium,StoredFile size and Session userId lacked default initialisers,Value-initialise both members,Cppcheck rerun
+D04,Low,Dense source produced misleading-indentation compiler warnings,Separate statements and apply clang-format,Build and analysis rerun
+D05,Medium,Global login mutex would serialize unrelated accounts,Use per-account striped locking and cap hash operations at two,Authentication and concurrent-load rerun

@@ -1,0 +1,315 @@
+{
+  "suite": "HTTP system and automated acceptance scenarios",
+  "passed": 77,
+  "total": 77,
+  "results": [
+    {
+      "test": "S01 bootstrap administrator",
+      "passed": true
+    },
+    {
+      "test": "POST /api/login",
+      "passed": true
+    },
+    {
+      "test": "POST /api/admin/users",
+      "passed": true
+    },
+    {
+      "test": "POST /api/admin/users",
+      "passed": true
+    },
+    {
+      "test": "POST /api/admin/users",
+      "passed": true
+    },
+    {
+      "test": "POST /api/admin/users",
+      "passed": true
+    },
+    {
+      "test": "POST /api/admin/users",
+      "passed": true
+    },
+    {
+      "test": "POST /api/admin/departments",
+      "passed": true
+    },
+    {
+      "test": "POST /api/admin/courses",
+      "passed": true
+    },
+    {
+      "test": "PUT /api/admin/courses/1/lecturers",
+      "passed": true
+    },
+    {
+      "test": "PUT /api/admin/courses/1/enrolments",
+      "passed": true
+    },
+    {
+      "test": "POST /api/login",
+      "passed": true
+    },
+    {
+      "test": "POST /api/login",
+      "passed": true
+    },
+    {
+      "test": "POST /api/login",
+      "passed": true
+    },
+    {
+      "test": "POST /api/login",
+      "passed": true
+    },
+    {
+      "test": "POST /api/login",
+      "passed": true
+    },
+    {
+      "test": "POST /api/courses/1/assignments",
+      "passed": true
+    },
+    {
+      "test": "POST /api/assignments/1/submission",
+      "passed": true
+    },
+    {
+      "test": "S02 multipart SHA256 matches upload",
+      "passed": true
+    },
+    {
+      "test": "GET /api/submissions/1/files/1",
+      "passed": true
+    },
+    {
+      "test": "S03 binary download round trip",
+      "passed": true
+    },
+    {
+      "test": "S04 student cannot download another student file",
+      "passed": true
+    },
+    {
+      "test": "PUT /api/submissions/1/mark",
+      "passed": true
+    },
+    {
+      "test": "GET /api/student/results",
+      "passed": true
+    },
+    {
+      "test": "S05 mark and feedback hidden before release",
+      "passed": true
+    },
+    {
+      "test": "S06 other department cannot moderate",
+      "passed": true
+    },
+    {
+      "test": "PUT /api/submissions/1/adjust",
+      "passed": true
+    },
+    {
+      "test": "POST /api/assignments/1/release",
+      "passed": true
+    },
+    {
+      "test": "S07 approved mark released",
+      "passed": true
+    },
+    {
+      "test": "GET /api/student/results",
+      "passed": true
+    },
+    {
+      "test": "S08 final result and feedback visible",
+      "passed": true
+    },
+    {
+      "test": "GET /api/hod/audit?submission=1",
+      "passed": true
+    },
+    {
+      "test": "S09 exactly one audit per mark mutation",
+      "passed": true
+    },
+    {
+      "test": "S10 invalid/fault input 01",
+      "passed": true
+    },
+    {
+      "test": "S10 invalid/fault input 02",
+      "passed": true
+    },
+    {
+      "test": "S10 invalid/fault input 03",
+      "passed": true
+    },
+    {
+      "test": "S10 invalid/fault input 04",
+      "passed": true
+    },
+    {
+      "test": "S10 invalid/fault input 05",
+      "passed": true
+    },
+    {
+      "test": "S10 invalid/fault input 06",
+      "passed": true
+    },
+    {
+      "test": "S10 invalid/fault input 07",
+      "passed": true
+    },
+    {
+      "test": "S10 invalid/fault input 08",
+      "passed": true
+    },
+    {
+      "test": "S10 invalid/fault input 09",
+      "passed": true
+    },
+    {
+      "test": "S10 invalid/fault input 10",
+      "passed": true
+    },
+    {
+      "test": "S10 invalid/fault input 11",
+      "passed": true
+    },
+    {
+      "test": "S10 invalid/fault input 12",
+      "passed": true
+    },
+    {
+      "test": "S10 invalid/fault input 13",
+      "passed": true
+    },
+    {
+      "test": "S10 invalid/fault input 14",
+      "passed": true
+    },
+    {
+      "test": "S10 invalid/fault input 15",
+      "passed": true
+    },
+    {
+      "test": "S10 invalid/fault input 16",
+      "passed": true
+    },
+    {
+      "test": "S10 invalid/fault input 17",
+      "passed": true
+    },
+    {
+      "test": "S10 invalid/fault input 18",
+      "passed": true
+    },
+    {
+      "test": "S10 invalid/fault input 19",
+      "passed": true
+    },
+    {
+      "test": "S10 invalid/fault input 20",
+      "passed": true
+    },
+    {
+      "test": "S10 invalid/fault input 21",
+      "passed": true
+    },
+    {
+      "test": "S10 invalid/fault input 22",
+      "passed": true
+    },
+    {
+      "test": "S10 invalid/fault input 23",
+      "passed": true
+    },
+    {
+      "test": "S10 invalid/fault input 24",
+      "passed": true
+    },
+    {
+      "test": "S10 invalid/fault input 25",
+      "passed": true
+    },
+    {
+      "test": "S10 invalid/fault input 26",
+      "passed": true
+    },
+    {
+      "test": "S10 invalid/fault input 27",
+      "passed": true
+    },
+    {
+      "test": "S10 invalid/fault input 28",
+      "passed": true
+    },
+    {
+      "test": "S10 invalid/fault input 29",
+      "passed": true
+    },
+    {
+      "test": "S10 invalid/fault input 30",
+      "passed": true
+    },
+    {
+      "test": "S11 server remains responsive after invalid inputs",
+      "passed": true
+    },
+    {
+      "test": "S12 UPDATE rejected",
+      "passed": true
+    },
+    {
+      "test": "S12 DELETE rejected",
+      "passed": true
+    },
+    {
+      "test": "S12 DELETE rejected",
+      "passed": true
+    },
+    {
+      "test": "S13 unique Argon2id hashes",
+      "passed": true
+    },
+    {
+      "test": "S14 process kill invalidates in-memory session",
+      "passed": true
+    },
+    {
+      "test": "POST /api/login",
+      "passed": true
+    },
+    {
+      "test": "GET /api/student/results",
+      "passed": true
+    },
+    {
+      "test": "S15 committed results survive process kill",
+      "passed": true
+    },
+    {
+      "test": "S16 backup command includes files",
+      "passed": true
+    },
+    {
+      "test": "S17 restore command",
+      "passed": true
+    },
+    {
+      "test": "S18 restored integrity and audit",
+      "passed": true
+    },
+    {
+      "test": "S19 fault writer opened transaction",
+      "passed": true
+    },
+    {
+      "test": "S20 interrupted transaction rolled back",
+      "passed": true
+    }
+  ]
+}

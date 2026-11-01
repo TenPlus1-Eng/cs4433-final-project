@@ -1,0 +1,14 @@
+/build*/
+/runtime/
+/tools/
+*.db
+*.db-wal
+*.db-shm
+*.gcda
+*.gcno
+*.gcov
+*.obj
+/submissions/
+/vendor/sqlite.zip
+__pycache__/
+/build*.zip

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="lms_tests.exe" errors="0" failures="0" tests="235" hostname="tbd" time="1.353" timestamp="2026-10-25T05:05:30Z">
+    <testcase classname="lms_tests.exe.global" name="T01 penalty boundaries and equivalence partitions" time="0.001" status="run"/>
+    <testcase classname="lms_tests.exe.global" name="T02 UTC validation and lifecycle" time="0.000" status="run"/>
+    <testcase classname="lms_tests.exe.global" name="T03 polymorphic permissions" time="0.000" status="run"/>
+    <testcase classname="lms_tests.exe.Fixture" name="T04 submission resubmission and release workflow" time="0.011" status="run"/>
+    <testcase classname="lms_tests.exe.Fixture" name="T05 late accepted but replacement refused" time="0.007" status="run"/>
+    <testcase classname="lms_tests.exe.Fixture" name="T06 extensions reclassify and reject after marking" time="0.009" status="run"/>
+    <testcase classname="lms_tests.exe.Fixture" name="T07 moderation return adjustment and stale version" time="0.010" status="run"/>
+    <testcase classname="lms_tests.exe.Fixture" name="T08 validation and scopes" time="0.013" status="run"/>
+    <testcase classname="lms_tests.exe.Fixture" name="T09 rollback and optimistic locking" time="0.006" status="run"/>
+    <testcase classname="lms_tests.exe.Fixture" name="T10 salted passwords login lockout and sessions" time="1.169" status="run"/>
+    <testcase classname="lms_tests.exe.Fixture" name="T11 administrator operations" time="0.092" status="run"/>
+    <testcase classname="lms_tests.exe.Fixture" name="T12 twenty SQL injection strings remain data" time="0.006" status="run"/>
+    <testcase classname="lms_tests.exe.Fixture" name="T13 release skips unmoderated and empty result lists" time="0.007" status="run"/>
+    <testcase classname="lms_tests.exe.global" name="T14 disk persistence checksum and sweep" time="0.005" status="run"/>
+    <testcase classname="lms_tests.exe.Fixture" name="T15 CR1 class deadline and individual precedence" time="0.007" status="run"/>
+    <testcase classname="lms_tests.exe.Fixture" name="T16 CR1 all-student reclassification and atomic refusal" time="0.008" status="run"/>
+    <system-out/>
+    <system-err/>
+  </testsuite>
+</testsuites>

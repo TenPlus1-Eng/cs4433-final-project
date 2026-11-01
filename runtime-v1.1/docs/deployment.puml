@@ -1,0 +1,26 @@
+@startuml
+title Moderated LMS - deployment v1.0 / v1.1
+node "School client PC (Windows / Linux)" as client {
+  artifact "lms_client\nC++17 console" as console
+}
+node "School server PC" as server {
+  artifact "lms_server\nHTTP / JSON API" as api
+  component "Business services\nRole and scope checks" as services
+  component "SqliteDatabase DAO" as dao
+  database "Local SQLite\nWAL + foreign keys" as db
+  folder "Submission files\nSHA-256 named records" as files
+  artifact "libsodium\nArgon2id / random tokens" as sodium
+  api --> services
+  services --> dao
+  services --> files
+  services --> sodium
+  dao --> db
+}
+console --> api : school LAN / HTTP JSON\nmultipart uploads
+node "Restricted offline backup storage" as backup
+server --> backup : stopped-service snapshot\ndatabase + file history
+note bottom of api
+Loopback by default. Isolated LAN only.
+No internet required at runtime.
+end note
+@enduml

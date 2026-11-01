@@ -1,0 +1,33 @@
+@startuml
+title CR1 additions to Figures 5.3, 5.4 and 5.10
+class Assignment {
+  +id: int
+  +deadline: UTC
+}
+class ClassExtension {
+  +assignmentId: int
+  +newDeadline: UTC
+  +reason: string
+  +grantedBy: int
+  +grantedAt: UTC
+}
+class Extension {
+  +studentId: int
+  +newDeadline: UTC
+}
+class ExtensionService {
+  +grantClassExtension(user, assignment, deadline, reason): void
+  +grantExtension(user, assignment, student, deadline, reason): void
+}
+Assignment "1" *-- "0..1" ClassExtension
+Assignment "1" *-- "0..*" Extension
+ExtensionService --> Assignment
+ExtensionService --> ClassExtension
+ExtensionService --> Extension
+note right of ExtensionService
+Effective = max(base, class, individual)
+All writes in one transaction.
+Assigned lecturers only.
+Reject if any submission already marked.
+end note
+@enduml

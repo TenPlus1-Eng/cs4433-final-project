@@ -1,0 +1,14 @@
+ID,Category,Risk,Likelihood,Impact,Exposure,Mitigation,Owner
+R1,Technical,SQLite/file integrity,2,4,8,Transactions; serialised access; recovery and checksum tests; stopped-service backups,Lebohang Lebete
+R2,Technical,Password implementation,1,5,5,libsodium Argon2id; unique salts; T10/S13; restricted server access,Lebohang Lebete
+R3,Project,Design time pressure,1,5,5,Design supplied and Gate 2 confirmed; preserve baseline; review deviations,Lebohang Lebete
+R4,Project,Scope expansion,2,3,6,Must requirements first; FR28 deferred; only scheduled CR1 added,Lebohang Lebete
+R5,Project,Insufficient business tests,1,3,3,Measured business coverage above 70%; retain boundary/role tests,Lebohang Lebete
+R6,People,Single-developer continuity,3,5,15,Local Git bundle and packages; authenticated remote publication still needed,Lebohang Lebete
+R7,People,Workload and understanding,2,3,6,Weekly work packages; viva rehearsal; student reviews all code,Lebohang Lebete
+R8,Technical,Design/code mismatch,2,3,6,Explicit consolidated-DAO and serialised-read deviations; traceability supplement,Lebohang Lebete
+R10,Technical,Hash queue exceeds login latency,4,4,16,Observed p95 2.5528s; preserve hashing; profile target hardware before acceptance,Lebohang Lebete
+R11,Technical,Unencrypted HTTP LAN traffic,2,4,8,Loopback default; isolated LAN demonstration; TLS work pending,Lebohang Lebete
+R12,Project,Traceability loss,1,3,3,FR/UC/source/test matrix and CR1 impact table,Lebohang Lebete
+R13,Project,GitHub publication blocked,3,3,9,Read-only connector and no local sign-in; bundle and push script provided,Lebohang Lebete
+R14,People,Usability/accessibility not observed,3,4,12,Three-user trial and supervisor Gate 3 remain pending,Lebohang Lebete

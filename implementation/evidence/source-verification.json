@@ -1,0 +1,9 @@
+{
+  "week": 7,
+  "base_release": "v1.1",
+  "revision": "Native C++ Windows GUI and verified usability amendments",
+  "backend_http_checks": 90,
+  "gui_form_checks": 28,
+  "source_copied_from_verified_working_tree": true,
+  "release_tag_modified": false
+}

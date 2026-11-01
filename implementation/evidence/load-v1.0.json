@@ -1,0 +1,18 @@
+{
+  "environment": "Windows x64 loopback; not constrained to specified 2 CPU cores / 4 GB",
+  "accounts": 850,
+  "students": 800,
+  "staff": 50,
+  "concurrency": 50,
+  "login_p95_seconds": 2.5528,
+  "listing_p95_seconds": 0.0091,
+  "submission_seconds": 44.342,
+  "accepted": 800,
+  "checksums_verified": 800,
+  "integrity_check": "ok",
+  "NFR01_local_pass": false,
+  "NFR02_local_pass": true,
+  "NFR03_local_pass": true,
+  "target_hardware_certified": false,
+  "external_network_physically_disabled": false
+}

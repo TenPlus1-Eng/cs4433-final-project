@@ -1,0 +1,382 @@
+[
+  {
+    "file": "lms\\src\\client.cpp",
+    "nloc": 222,
+    "functions": [
+      {
+        "name": "ask",
+        "cyclomatic_complexity": 13,
+        "nloc": 25
+      },
+      {
+        "name": "replace",
+        "cyclomatic_complexity": 4,
+        "nloc": 10
+      },
+      {
+        "name": "form",
+        "cyclomatic_complexity": 8,
+        "nloc": 20
+      },
+      {
+        "name": "main",
+        "cyclomatic_complexity": 36,
+        "nloc": 155
+      }
+    ]
+  },
+  {
+    "file": "lms\\src\\domain.cpp",
+    "nloc": 85,
+    "functions": [
+      {
+        "name": "lms::UserFactory::create",
+        "cyclomatic_complexity": 5,
+        "nloc": 13
+      },
+      {
+        "name": "lms::utc",
+        "cyclomatic_complexity": 2,
+        "nloc": 9
+      },
+      {
+        "name": "lms::epoch",
+        "cyclomatic_complexity": 6,
+        "nloc": 14
+      },
+      {
+        "name": "lms::SystemClock::now",
+        "cyclomatic_complexity": 1,
+        "nloc": 3
+      },
+      {
+        "name": "lms::requireText",
+        "cyclomatic_complexity": 4,
+        "nloc": 4
+      },
+      {
+        "name": "lms::requirePermission",
+        "cyclomatic_complexity": 2,
+        "nloc": 4
+      },
+      {
+        "name": "lms::TieredDailyPenaltyPolicy::calculate",
+        "cyclomatic_complexity": 8,
+        "nloc": 7
+      },
+      {
+        "name": "lms::TieredDailyPenaltyPolicy::daysLate",
+        "cyclomatic_complexity": 2,
+        "nloc": 4
+      },
+      {
+        "name": "lms::SubmissionLifecycle::canTransition",
+        "cyclomatic_complexity": 11,
+        "nloc": 14
+      },
+      {
+        "name": "lms::SubmissionLifecycle::require",
+        "cyclomatic_complexity": 2,
+        "nloc": 5
+      }
+    ]
+  },
+  {
+    "file": "lms\\src\\repository.cpp",
+    "nloc": 287,
+    "functions": [
+      {
+        "name": "lms::Statement::Statement",
+        "cyclomatic_complexity": 12,
+        "nloc": 34
+      },
+      {
+        "name": "lms::Statement::~Statement",
+        "cyclomatic_complexity": 1,
+        "nloc": 3
+      },
+      {
+        "name": "lms::IRepository::one",
+        "cyclomatic_complexity": 2,
+        "nloc": 6
+      },
+      {
+        "name": "lms::SqliteDatabase::SqliteDatabase",
+        "cyclomatic_complexity": 4,
+        "nloc": 17
+      },
+      {
+        "name": "lms::SqliteDatabase::~SqliteDatabase",
+        "cyclomatic_complexity": 1,
+        "nloc": 3
+      },
+      {
+        "name": "lms::SqliteDatabase::control",
+        "cyclomatic_complexity": 2,
+        "nloc": 4
+      },
+      {
+        "name": "lms::SqliteDatabase::list",
+        "cyclomatic_complexity": 7,
+        "nloc": 29
+      },
+      {
+        "name": "lms::SqliteDatabase::execute",
+        "cyclomatic_complexity": 10,
+        "nloc": 15
+      },
+      {
+        "name": "lms::SqliteDatabase::transaction",
+        "cyclomatic_complexity": 2,
+        "nloc": 11
+      },
+      {
+        "name": "lms::SqliteDatabase::backup",
+        "cyclomatic_complexity": 4,
+        "nloc": 17
+      },
+      {
+        "name": "lms::randomToken",
+        "cyclomatic_complexity": 1,
+        "nloc": 7
+      },
+      {
+        "name": "lms::DiskFileStore::DiskFileStore",
+        "cyclomatic_complexity": 1,
+        "nloc": 3
+      },
+      {
+        "name": "lms::DiskFileStore::save",
+        "cyclomatic_complexity": 4,
+        "nloc": 20
+      },
+      {
+        "name": "lms::DiskFileStore::remove",
+        "cyclomatic_complexity": 3,
+        "nloc": 6
+      },
+      {
+        "name": "lms::DiskFileStore::read",
+        "cyclomatic_complexity": 4,
+        "nloc": 8
+      },
+      {
+        "name": "lms::DiskFileStore::sweep",
+        "cyclomatic_complexity": 5,
+        "nloc": 8
+      }
+    ]
+  },
+  {
+    "file": "lms\\src\\server.cpp",
+    "nloc": 302,
+    "functions": [
+      {
+        "name": "readFile",
+        "cyclomatic_complexity": 2,
+        "nloc": 6
+      },
+      {
+        "name": "main",
+        "cyclomatic_complexity": 37,
+        "nloc": 290
+      }
+    ]
+  },
+  {
+    "file": "lms\\src\\services.cpp",
+    "nloc": 501,
+    "functions": [
+      {
+        "name": "lms::PasswordHasher::enter",
+        "cyclomatic_complexity": 1,
+        "nloc": 5
+      },
+      {
+        "name": "lms::PasswordHasher::leave",
+        "cyclomatic_complexity": 1,
+        "nloc": 5
+      },
+      {
+        "name": "lms::PasswordHasher::hash",
+        "cyclomatic_complexity": 4,
+        "nloc": 13
+      },
+      {
+        "name": "lms::PasswordHasher::verify",
+        "cyclomatic_complexity": 2,
+        "nloc": 8
+      },
+      {
+        "name": "lms::SessionManager::create",
+        "cyclomatic_complexity": 1,
+        "nloc": 6
+      },
+      {
+        "name": "lms::SessionManager::authenticate",
+        "cyclomatic_complexity": 3,
+        "nloc": 13
+      },
+      {
+        "name": "lms::SessionManager::logout",
+        "cyclomatic_complexity": 1,
+        "nloc": 4
+      },
+      {
+        "name": "lms::SessionManager::revoke",
+        "cyclomatic_complexity": 3,
+        "nloc": 8
+      },
+      {
+        "name": "lms::AuthService::login",
+        "cyclomatic_complexity": 9,
+        "nloc": 30
+      },
+      {
+        "name": "lms::AuthService::authenticate",
+        "cyclomatic_complexity": 2,
+        "nloc": 6
+      },
+      {
+        "name": "lms::AuthService::changePassword",
+        "cyclomatic_complexity": 2,
+        "nloc": 10
+      },
+      {
+        "name": "lms::Service::courseScope",
+        "cyclomatic_complexity": 7,
+        "nloc": 13
+      },
+      {
+        "name": "lms::Service::assignmentScope",
+        "cyclomatic_complexity": 1,
+        "nloc": 5
+      },
+      {
+        "name": "lms::Service::submissionScope",
+        "cyclomatic_complexity": 3,
+        "nloc": 7
+      },
+      {
+        "name": "lms::Service::deadline",
+        "cyclomatic_complexity": 3,
+        "nloc": 10
+      },
+      {
+        "name": "lms::Service::audit",
+        "cyclomatic_complexity": 1,
+        "nloc": 6
+      },
+      {
+        "name": "lms::AdminService::list",
+        "cyclomatic_complexity": 4,
+        "nloc": 10
+      },
+      {
+        "name": "lms::AdminService::createUser",
+        "cyclomatic_complexity": 1,
+        "nloc": 15
+      },
+      {
+        "name": "lms::AdminService::updateUser",
+        "cyclomatic_complexity": 4,
+        "nloc": 12
+      },
+      {
+        "name": "lms::AdminService::resetPassword",
+        "cyclomatic_complexity": 1,
+        "nloc": 7
+      },
+      {
+        "name": "lms::AdminService::saveDepartment",
+        "cyclomatic_complexity": 4,
+        "nloc": 16
+      },
+      {
+        "name": "lms::AdminService::saveCourse",
+        "cyclomatic_complexity": 2,
+        "nloc": 16
+      },
+      {
+        "name": "lms::AdminService::assignLecturer",
+        "cyclomatic_complexity": 3,
+        "nloc": 9
+      },
+      {
+        "name": "lms::AdminService::enrol",
+        "cyclomatic_complexity": 3,
+        "nloc": 12
+      },
+      {
+        "name": "lms::AssignmentService::create",
+        "cyclomatic_complexity": 4,
+        "nloc": 17
+      },
+      {
+        "name": "lms::AssignmentService::listForStudent",
+        "cyclomatic_complexity": 5,
+        "nloc": 20
+      },
+      {
+        "name": "lms::ExtensionService::grantClassExtension",
+        "cyclomatic_complexity": 6,
+        "nloc": 24
+      },
+      {
+        "name": "lms::ExtensionService::grantExtension",
+        "cyclomatic_complexity": 6,
+        "nloc": 22
+      },
+      {
+        "name": "lms::SubmissionService::submit",
+        "cyclomatic_complexity": 6,
+        "nloc": 43
+      },
+      {
+        "name": "lms::SubmissionService::listForLecturer",
+        "cyclomatic_complexity": 3,
+        "nloc": 11
+      },
+      {
+        "name": "lms::SubmissionService::resultsForStudent",
+        "cyclomatic_complexity": 5,
+        "nloc": 19
+      },
+      {
+        "name": "lms::SubmissionService::download",
+        "cyclomatic_complexity": 5,
+        "nloc": 12
+      },
+      {
+        "name": "lms::MarkingService::markSubmission",
+        "cyclomatic_complexity": 5,
+        "nloc": 21
+      },
+      {
+        "name": "lms::ModerationService::listMarked",
+        "cyclomatic_complexity": 1,
+        "nloc": 4
+      },
+      {
+        "name": "lms::ModerationService::approveInternal",
+        "cyclomatic_complexity": 6,
+        "nloc": 23
+      },
+      {
+        "name": "lms::ModerationService::returnForRemark",
+        "cyclomatic_complexity": 1,
+        "nloc": 9
+      },
+      {
+        "name": "lms::ModerationService::release",
+        "cyclomatic_complexity": 8,
+        "nloc": 21
+      },
+      {
+        "name": "lms::ModerationService::auditFor",
+        "cyclomatic_complexity": 1,
+        "nloc": 4
+      }
+    ]
+  }
+]

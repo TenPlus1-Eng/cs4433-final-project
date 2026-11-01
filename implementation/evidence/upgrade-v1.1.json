@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "actual_v1.0_executable_used": true,
+  "existing_account_preserved": true,
+  "class_extension_table_created": true,
+  "idempotent_second_run": true,
+  "integrity_check": "ok"
+}

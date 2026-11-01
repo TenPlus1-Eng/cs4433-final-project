@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="lms_tests.exe" errors="0" failures="0" tests="219" hostname="tbd" time="1.350" timestamp="2026-10-25T04:59:19Z">
+    <testcase classname="lms_tests.exe.global" name="T01 penalty boundaries and equivalence partitions" time="0.001" status="run"/>
+    <testcase classname="lms_tests.exe.global" name="T02 UTC validation and lifecycle" time="0.000" status="run"/>
+    <testcase classname="lms_tests.exe.global" name="T03 polymorphic permissions" time="0.000" status="run"/>
+    <testcase classname="lms_tests.exe.Fixture" name="T04 submission resubmission and release workflow" time="0.011" status="run"/>
+    <testcase classname="lms_tests.exe.Fixture" name="T05 late accepted but replacement refused" time="0.007" status="run"/>
+    <testcase classname="lms_tests.exe.Fixture" name="T06 extensions reclassify and reject after marking" time="0.008" status="run"/>
+    <testcase classname="lms_tests.exe.Fixture" name="T07 moderation return adjustment and stale version" time="0.009" status="run"/>
+    <testcase classname="lms_tests.exe.Fixture" name="T08 validation and scopes" time="0.012" status="run"/>
+    <testcase classname="lms_tests.exe.Fixture" name="T09 rollback and optimistic locking" time="0.006" status="run"/>
+    <testcase classname="lms_tests.exe.Fixture" name="T10 salted passwords login lockout and sessions" time="1.178" status="run"/>
+    <testcase classname="lms_tests.exe.Fixture" name="T11 administrator operations" time="0.096" status="run"/>
+    <testcase classname="lms_tests.exe.Fixture" name="T12 twenty SQL injection strings remain data" time="0.006" status="run"/>
+    <testcase classname="lms_tests.exe.Fixture" name="T13 release skips unmoderated and empty result lists" time="0.007" status="run"/>
+    <testcase classname="lms_tests.exe.global" name="T14 disk persistence checksum and sweep" time="0.007" status="run"/>
+    <system-out/>
+    <system-err/>
+  </testsuite>
+</testsuites>

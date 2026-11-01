@@ -1,0 +1,133 @@
+{
+  "checks": [
+    {
+      "passed": true,
+      "test": "STUDENT has a usable action list"
+    },
+    {
+      "passed": true,
+      "test": "STUDENT includes password maintenance"
+    },
+    {
+      "passed": true,
+      "test": "LECTURER has a usable action list"
+    },
+    {
+      "passed": true,
+      "test": "LECTURER includes password maintenance"
+    },
+    {
+      "passed": true,
+      "test": "HEAD_OF_DEPARTMENT has a usable action list"
+    },
+    {
+      "passed": true,
+      "test": "HEAD_OF_DEPARTMENT includes password maintenance"
+    },
+    {
+      "passed": true,
+      "test": "ADMINISTRATOR has a usable action list"
+    },
+    {
+      "passed": true,
+      "test": "ADMINISTRATOR includes password maintenance"
+    },
+    {
+      "passed": true,
+      "test": "Create-user role dropdown shows four choices"
+    },
+    {
+      "passed": true,
+      "test": "Missing required field stays on create-user form"
+    },
+    {
+      "passed": true,
+      "test": "Validation retains entered username and password"
+    },
+    {
+      "passed": true,
+      "test": "Validation does not rebuild the form"
+    },
+    {
+      "passed": true,
+      "test": "Background request completes without blocking the UI"
+    },
+    {
+      "passed": true,
+      "test": "Server conflict stays on the same form"
+    },
+    {
+      "passed": true,
+      "test": "Server conflict shows an inline explanation"
+    },
+    {
+      "passed": true,
+      "test": "Server conflict retains all entered fields"
+    },
+    {
+      "passed": true,
+      "test": "Background request completes without blocking the UI"
+    },
+    {
+      "passed": true,
+      "test": "Correcting the field and retrying succeeds"
+    },
+    {
+      "passed": true,
+      "test": "Successful save keeps the user's current form"
+    },
+    {
+      "passed": true,
+      "test": "Background request completes without blocking the UI"
+    },
+    {
+      "passed": true,
+      "test": "Session error keeps the form and entered values"
+    },
+    {
+      "passed": true,
+      "test": "Navigating away and back restores the draft"
+    },
+    {
+      "passed": true,
+      "test": "Background request completes without blocking the UI"
+    },
+    {
+      "passed": true,
+      "test": "Connection error keeps the form and its values"
+    },
+    {
+      "passed": true,
+      "test": "Editing a selected user fills the correct user ID"
+    },
+    {
+      "passed": true,
+      "test": "Editing an inactive user preserves inactive status"
+    },
+    {
+      "passed": true,
+      "test": "A selected user ID is never mistaken for a department ID"
+    },
+    {
+      "passed": true,
+      "test": "Selected student fills enrolment student ID"
+    },
+    {
+      "passed": true,
+      "test": "Lecturer has a My courses view"
+    },
+    {
+      "passed": true,
+      "test": "Course selector has a visible dropdown arrow"
+    },
+    {
+      "passed": true,
+      "test": "Course dropdown displays code and title"
+    },
+    {
+      "passed": true,
+      "test": "Course draft retains record ID"
+    }
+  ],
+  "total": 32
+}
